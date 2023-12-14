@@ -16,7 +16,6 @@ for i in range(16):
     plt.imshow(training_images[i], cmap=plt.cm.binary)
     plt.xlabel(class_names[training_labels[i][0]])
 
-plt.show()
 
 training_images = training_images[:20000]
 training_labels = training_labels[:20000]
@@ -44,6 +43,7 @@ print(f"Accuracy: {accuracy}")
 
 model.save('image_classifier.model')
 
+plt.show()
 
 # img = cv.imread('deer.jpg')
 # img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
